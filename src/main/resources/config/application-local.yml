@@ -1,1 +1,47 @@
+# 로깅설정
+logging:
+  config: classpath:config/log4j2-local.yml
+
+# 서버설정
+server:
+  servlet:
+    context-path: /
+  ssl:
+    enabled: false
+
+# Spring설정
+spring:
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: false
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource: # DB설정
+    url: jdbc:h2:../szs;
+    driver-class-name: org.h2.Driver
+    username: szsadmin
+    password: szaadminpwd123
+
+  jpa:  # JPA설정
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: H2
+    show-sql: true
+  messages: # Message설정
+    basename: messages/message
+    encoding: UTF-8
+  h2:
+    console:
+      enabled: true
+      path: /h2_console
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:h2/schema.sql
 

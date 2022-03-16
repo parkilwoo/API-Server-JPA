@@ -1,5 +1,6 @@
 package park.ilwoo.javis.common;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 import org.springframework.context.MessageSource;
 
@@ -11,13 +12,13 @@ import java.util.Objects;
  */
 @Data
 public class Result {
-    // Setter, Getter 실행 X
-    @Setter(AccessLevel.NONE)
+    // Getter 실행 X
     @Getter(AccessLevel.NONE)
     private MessageSource messageSource = (MessageSource) Utils.getBean("messageSource");
 
     private String code;          // result code
     private String msg;           // result message
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private Object data;          // result data
 
     /**
@@ -46,5 +47,13 @@ public class Result {
     public void setFail() {
         this.msg = messageSource.getMessage("result.fail.msg", null, Locale.getDefault());
         this.code = messageSource.getMessage("result.fail.code", null, Locale.getDefault());
+    }
+
+    /**
+     * Resp Fail(exception)
+     */
+    public void setFail(String code, String msg) {
+        this.msg = msg;
+        this.code = code;
     }
 }

@@ -3,8 +3,8 @@
 # Result Class 메시징 처리
 result:
   success:
-    code: "0000"
+    code: "000"
     msg: "성공"
   fail:
-    code: "9999"
+    code: "999"
     msg: "실패"

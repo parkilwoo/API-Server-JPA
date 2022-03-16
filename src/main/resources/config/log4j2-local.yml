@@ -1,0 +1,33 @@
+# log4j2 설정파일
+
+Configuration:
+  name: log4j2-local
+  status: warn
+
+  appenders:
+    Console:
+      name: LogToConsole
+      PatternLayout:
+        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+
+  Loggers:
+    logger:
+      - name: park.ilwoo.javis
+        level: debug
+        additivity: false
+        AppenderRef:
+          - ref: LogToConsole
+      - name: org.hibernate.type.descriptor.sql.BasicBinder
+        level: trace
+        additivity: false
+        AppenderRef:
+          - ref: LogToConsole
+      - name: org.hibernate.SQL
+        level: debug
+        additivity: false
+        AppenderRef:
+          - ref: LogToConsole
+    Root:
+      level: warn
+      AppenderRef:
+        ref: LogToConsole
