@@ -51,9 +51,9 @@ Http응답 통신코드로 Code 내보냄
 <img width="183" alt="스크린샷 2022-03-18 오후 9 04 10" src="https://user-images.githubusercontent.com/56834479/158999847-8529ee87-7d3c-42b7-ab7c-a89b9586009f.png">. 
  - 실패응답 :  
 스크랩을 하지 않았을 경우. 
-<img width="239" alt="스크린샷 2022-03-18 오후 9 18 51" src="https://user-images.githubusercontent.com/56834479/159001720-d72e4875-ac75-4d2a-8e67-eb58eda51fe1.png">
+<img width="239" alt="스크린샷 2022-03-18 오후 9 18 51" src="https://user-images.githubusercontent.com/56834479/159001720-d72e4875-ac75-4d2a-8e67-eb58eda51fe1.png">  
 
-
+## Swagger주소 : http://localhost:8080/swagger-ui/index.html
 
 # 주관식 과제
 
