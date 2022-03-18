@@ -8,6 +8,9 @@ import park.ilwoo.javis.user.entity.User;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 가입 가능한 회원 Validation
+ */
 @Component
 public class UserJoinValidator implements Validator {
     //  한글은 YML에서 속성 가져오는게 안되는듯..
@@ -39,6 +42,7 @@ public class UserJoinValidator implements Validator {
         //  2. 이름과 주민번호 매칭이 안될경우
         String regNo = joinUser.getRegNo();
         if(!permittedMap.get(userName).equals(regNo)) errors.rejectValue("regNo", "invalid.regNo", "주민번호가 맞지 않습니다.");
+
 
     }
 }

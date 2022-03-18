@@ -39,9 +39,9 @@ public class SwaggerConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.OAS_30)
-                .useDefaultResponseMessages(true)
+                .useDefaultResponseMessages(false)
                 .select()
-                .apis(RequestHandlerSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("park.ilwoo.javis") )
                 .paths(PathSelectors.any())
                 .build()
                 .ignoredParameterTypes(Errors.class, Authentication.class)

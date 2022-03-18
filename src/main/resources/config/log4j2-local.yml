@@ -28,6 +28,6 @@ Configuration:
         AppenderRef:
           - ref: LogToConsole
     Root:
-      level: warn
+      level: debug
       AppenderRef:
         ref: LogToConsole

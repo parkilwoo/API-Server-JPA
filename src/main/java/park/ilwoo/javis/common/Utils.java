@@ -31,10 +31,10 @@ public class Utils {
         StringBuilder sb = new StringBuilder();
         for (ObjectError oe: errors.getAllErrors()
              ) {
-            sb.append(oe.getDefaultMessage());
-            sb.append(System.getProperty("line.separator"));
+            log.error(oe.getDefaultMessage());
         }
 
+        sb.append(errors.getAllErrors().get(0).getDefaultMessage());
         return sb.toString();
     }
 
