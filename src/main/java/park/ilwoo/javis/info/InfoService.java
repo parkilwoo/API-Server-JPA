@@ -29,7 +29,7 @@ import java.util.Map;
 @Slf4j
 public class InfoService {
 
-    private final String URL = "https://codetest.3o3.co.kr/scrap";
+    private final String URL = "요것은 비공개!";
     private final String POST = "POST";
     private final String USER_AGENT = "Mozilla/5.0";
     private final String CONTENT_TYPE = "application/json; utf-8";
