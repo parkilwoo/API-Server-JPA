@@ -1,6 +1,5 @@
-# szs
-삼쩜삼 과제테스트 Repository
-# API구축문제
+
+# API 서버구축 과제였지만, 참고용으로 남겨놔야지,,,
 
 ## 1. 회원가입 
   - 구현여부 : OK
@@ -52,5 +51,3 @@ Http응답 통신코드로 Code 내보냄
  - 실패응답 :  
 스크랩을 하지 않았을 경우. 
 <img width="239" alt="스크린샷 2022-03-18 오후 9 18 51" src="https://user-images.githubusercontent.com/56834479/159001720-d72e4875-ac75-4d2a-8e67-eb58eda51fe1.png">  
-
-## Swagger주소 : http://localhost:8080/swagger-ui/index.html
