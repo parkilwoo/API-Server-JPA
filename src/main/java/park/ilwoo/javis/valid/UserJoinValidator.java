@@ -15,11 +15,8 @@ import java.util.Map;
 public class UserJoinValidator implements Validator {
     //  한글은 YML에서 속성 가져오는게 안되는듯..
     private Map<String, String> permittedMap = new HashMap<String, String>(){{
-        put("홍길동", "860824-1655068");
-        put("김둘리", "921108-1582816");
-        put("마징가", "880601-2455116");
-        put("베지터", "910411-1656116");
-        put("손오공", "820326-2715702");
+        put("홍길동", "123456-1234567");
+        put("임꺽정", "000000-0000000");
     }};
 
     @Override
