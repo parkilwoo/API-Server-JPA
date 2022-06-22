@@ -20,10 +20,10 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   datasource: # DB설정
-    url: jdbc:h2:../szs;
+    url: jdbc:h2:../jpa;
     driver-class-name: org.h2.Driver
-    username: szsadmin
-    password: szaadminpwd123
+    username: jpaadmin
+    password: jpaadminpwd123
 
   jpa:  # JPA설정
     hibernate:
